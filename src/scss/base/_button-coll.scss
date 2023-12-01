@@ -1,0 +1,15 @@
+.main-button{
+  background: var(--active);
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 14px 40px;
+  border-radius: 4px;
+
+  &:hover{
+    background: var(--hover);
+    box-shadow: 5px 5px 5px black;
+  }
+}

@@ -1,0 +1,33 @@
+.video-content__play {
+  display: none;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #3b3a3a;;
+
+  & iframe {
+    height: 90%;
+  }
+
+  &-close {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &:hover, &:focus {
+    color: var(--text-descr);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+
+
+

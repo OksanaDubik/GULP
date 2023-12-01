@@ -1,0 +1,28 @@
+.footer-copyright {
+  background: #252525;;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 572px) {
+    padding: 37px 0 38px;
+  }
+
+  & p {
+    color: #FFF;
+    font-family: var(--font-rare);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 200% */
+    text-transform: uppercase;
+    @media (max-width: 375px) {
+      font-size: 8px;
+      opacity: 0.8;
+    }
+  }
+  & svg{
+    @media (max-width: 375px){
+      margin: 0 2px;
+    }
+  }
+}

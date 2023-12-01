@@ -1,0 +1,10 @@
+.container {
+  padding: 0 var(--container-padding);
+  max-width: var(--container-width);
+ }
+.container-center{
+  max-width: var(--container-width);
+  padding-left: calc(var(--container-padding) + 5%);
+  padding-right: calc(var(--container-padding) + 5.6%);
+}
+

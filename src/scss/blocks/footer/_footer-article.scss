@@ -1,0 +1,127 @@
+.footer-article {
+  padding: 0 0 0 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 47px;
+  @media (max-width: 949px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 708px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: 614px) {
+    padding: 0 0 0 5vw;
+  }
+  @media (max-width: 572px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px 0 0 55px;
+    gap: 25px 0;
+  }
+  @media (max-width: 375px) {
+    padding: 64px 0 0 22px;
+    gap: 69px 0;
+  }
+  & ul:first-child{
+    @media (max-width: 375px) {
+      width: 30vw;
+    }
+
+  }
+
+  & ul:nth-child(2){
+    @media (max-width: 375px) {
+      margin-left: -50px;
+         }
+
+  }
+
+
+  & ul:not(:last-child) {
+    @media (max-width: 708px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 2vw;
+    }
+    @media (max-width: 572px) {
+      display: block;
+         }
+
+  }
+  & ul:last-child{
+    @media (max-width: 448px) {
+      width: 100%;
+      margin-left: 19vw;
+    }
+  }
+
+
+  & li a, & li {
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 183%;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @media (max-width: 614px) {
+      font-size: 12px;
+    }
+  }
+
+
+  & li a:hover, & li:hover{
+       text-shadow: 5px 5px 5px black;
+  }
+
+  &__addr li {
+    white-space: nowrap;
+
+    @media (max-width: 1069px) {
+      white-space: normal;
+    }
+
+    & a {
+      color: #ffffff;
+      text-transform: lowercase;
+      padding-left: 5px;
+
+    }
+  }
+
+
+  & li:first-child {
+    color: var(--active);
+    font-family: var(--font-main);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin-left: 0;
+    margin-bottom: 16px;
+    display: flex;
+    padding-right: 10px;
+
+@media (max-width: 448px) {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+  }
+
+  & li:first-child::before {
+    content: url("../../img/footer/Hexagon.svg");
+    margin: 0 15px 0 0;
+
+    @media (max-width: 375px) {
+      margin: -1px 11px 3px -4px;
+    }
+
+  }
+
+  & li:last-child {
+    white-space: nowrap;
+  }
+
+
+}

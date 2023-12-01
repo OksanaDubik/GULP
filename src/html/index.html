@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp сборка</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+@@include('blocks/header/header.html')
+<main>
+    <div class="container-center">
+        @@include('blocks/benefits/benefits.html')
+    </div>
+    @@include('blocks/gallery/gallery.html')
+    <section class="video">
+        @@include('blocks/video/video-description.html')
+        @@include('blocks/video/video-content.html')
+    </section>
+    <section class="form">
+        @@include('blocks/form/form-coll.html')
+        @@include('blocks/form/form-content.html')
+    </section>
+</main>
+@@include('blocks/footer/footer.html')
+
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>

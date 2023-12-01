@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding: 127px 11.5% 120px 12%;
+  background: url("../../img/form/FormBg.jpg");
+  background-size: cover;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 127px 10% 120px 10%;
+  }
+  @media (max-width: 375px) {
+    padding: 45px 11% 39px 6%;
+  }
+
+  &-coll {
+    & h2 {
+      font-family: var(--font-main);
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 55px;
+
+      @media (max-width: 448px) {
+        font-size: 34px;
+        line-height: 40px;
+
+      }
+    }
+  }
+}

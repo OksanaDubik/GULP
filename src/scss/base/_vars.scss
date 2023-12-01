@@ -1,0 +1,26 @@
+:root{
+  --container-width: 100%;
+  --container-padding: 14%;
+
+  //--font-main: 'Poppins', sans-serif;
+  --font-main: 'ProximaNova-Semibold', sans-serif;//700
+  --font-bold:'ProximaNova_Extrabold', sans-serif;//800
+  --font-accent: 'Monsterrat', serif;
+  --font-text-descr:'ProximaNova-Regular', sans-serif;//400
+  --font-rare: 'Raleway', sans-serif;
+
+  --active: #FF8B00;
+  --hover: #f8c282;
+  --page-bg: #fff;
+  --text-color: #fff;
+  --accent: #7050E5;
+  --text-descr:#878787;
+
+  --laptop-size: 1199px;
+  --tablet--size: 959px;
+  --mobile-size: 599px;
+
+  @media (max-width: 1023px){
+    --container-padding: 5%;
+  }
+}
