@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2b013a3-89d7-4d4d-b466-4b3d156e8110" name="Changes" comment="img/css">
+    <list default="true" id="e2b013a3-89d7-4d4d-b466-4b3d156e8110" name="Changes" comment="img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/blocks/gallery/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/blocks/gallery/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1700828217579" duration="4597000" />
       <workItem from="1701341237915" duration="827000" />
       <workItem from="1701495313947" duration="3007000" />
-      <workItem from="1701518505295" duration="3818000" />
+      <workItem from="1701518505295" duration="4495000" />
     </task>
     <task id="LOCAL-00001" summary="sending to git">
       <created>1701519983394</created>
@@ -116,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701522009434</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="img">
+      <created>1701522399488</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701522399488</updated>
+    </task>
+    <task id="LOCAL-00006" summary="img">
+      <created>1701522718502</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701522718502</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +140,7 @@
     <MESSAGE value="sending to git" />
     <MESSAGE value="'babel' delete" />
     <MESSAGE value="img/css" />
-    <option name="LAST_COMMIT_MESSAGE" value="img/css" />
+    <MESSAGE value="img" />
+    <option name="LAST_COMMIT_MESSAGE" value="img" />
   </component>
 </project>
