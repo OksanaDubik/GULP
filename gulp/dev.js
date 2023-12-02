@@ -32,7 +32,7 @@ const plumberNotify = (title) => {
     return {
         errorHandler: notify.onError({
             title: title,
-            message: 'Error <$= error.message %>',
+            message: 'Error <%= error.message %>',
             sound: false
         })
     }
@@ -91,7 +91,6 @@ gulp.task('js:dev', function () {
         .src('./src/js/*.js')
         .pipe(changed('./build/js'))
         .pipe(plumber(plumberNotify('JS')))
-        // .pipe(babel())
         .pipe(webpack(require('./../webpack.config.js')))
         .pipe(gulp.dest('./build/js'))
 })

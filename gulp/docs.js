@@ -2,7 +2,7 @@ const gulp = require('gulp');
 //HTML
 const fileInclude = require('gulp-file-include')
 const htmlclean = require('gulp-htmlclean')
-const webpHtml = require ('gulp-webp-html')
+const webpHTML = require ('gulp-webp-html-nosvg')
 
 //SASS
 const sass = require('gulp-sass')(require('sass'))
@@ -45,20 +45,19 @@ const plumberNotify = (title) => {
     return {
         errorHandler: notify.onError({
             title: title,
-            message: 'Error <$= error.message %>',
+            message: 'Error <%= error.message %>',
             sound: false
-        })
-    }
-}
+        }),
+    };
+};
 
 //формирование block html, обновление папки docs, plumberHtmlConfig-фиксирование ошибок
 gulp.task('html:docs', function () {
-    return gulp
-        .src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
+    return gulp.src(['./src/html/*.html', '!./src/html/blocks/*.html'])
         .pipe(changed('./docs/'))
         .pipe(plumber(plumberNotify('HTML')))
         .pipe(fileInclude(fileIncludeSetting))
-        .pipe(webpHtml())
+        .pipe(webpHTML())
         .pipe(htmlclean())
         .pipe(gulp.dest('./docs/'));
 });
@@ -76,14 +75,15 @@ gulp.task('sass:docs', function () {
         .pipe(groupMedia())
         .pipe(sass())
         .pipe(csso())
-        .pipe(sourceMaps.write())
-        .pipe(gulp.dest('./docs/css/'))
-})
+        // .pipe(sourceMaps.write())
+        .pipe(gulp.dest('./docs/css/'));
+});
 
 //обновление папки docs img
 const DESTINATION = './docs/img/';
 gulp.task('images:docs', function () {
-    return gulp.src('./src/img/**/*')
+    return gulp
+        .src('./src/img/**/*')
         .pipe(changed(DESTINATION))
         .pipe(webp())
         .pipe(gulp.dest(DESTINATION))
@@ -110,8 +110,7 @@ gulp.task('files:docs', function () {
 })
 
 gulp.task('js:docs', function () {
-    return gulp
-        .src('./src/js/*.js')
+    return gulp.src('./src/js/*.js')
         .pipe(changed('./docs/js'))
         .pipe(plumber(plumberNotify('JS')))
         .pipe(babel())
@@ -125,9 +124,16 @@ const serverOptions = {
     open: true
 }
 gulp.task('server:docs', function () {
-    return gulp.src('./docs/')
-        .pipe(server(serverOptions))
+    return gulp.src('./docs/').pipe(server(serverOptions))
 })
 
+gulp.task('watch:docs', function () {
+    gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:docs'))
+    gulp.watch('./src/*.html', gulp.parallel('html:docs'))
+    gulp.watch('./src/img/**/*', gulp.parallel('images:docs'))
+    gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:docs'))
+    gulp.watch('./src/files/**/*', gulp.parallel('files:docs'))
+    gulp.watch('./src/js/**/*.js', gulp.parallel('js:docs'))
+})
 
 
