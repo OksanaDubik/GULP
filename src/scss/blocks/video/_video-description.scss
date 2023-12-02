@@ -1,0 +1,62 @@
+.video {
+  display: flex;
+  justify-content: space-between;
+  padding: 97px 10% 97px;
+  align-items: center;
+  @media (max-width: 767px) {
+    padding: 59px 0 97px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &-description {
+    width: 35%;
+    text-align: left;
+    margin-top: -6px;
+    @media (max-width: 767px) {
+      width: 80%;
+    }
+    @media (max-width: 375px) {
+      margin-top: -11px;
+      margin-left: -30px;
+    }
+
+    & h4 {
+      font-family: var(--font-main);
+      color: var(--accent);
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 55px;
+      @media (max-width: 448px) {
+        font-size: 24px;
+      }
+    }
+
+    & p {
+      font-family: var(--font-text-descr);
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.3px;
+      color: var(--text-descr);
+      padding: 8px 0 37px 0;
+    }
+
+    &__button {
+      padding: 15px 44px 10px 43px;
+      margin-top: -12px;
+      margin-bottom: 50px;
+      @media (max-width: 448px) {
+        margin-left: 22vw
+      }
+      @media (max-width: 375px) {
+        margin-top: 228px;
+        margin-bottom: 0;
+        margin-left: 77px;
+      }
+    }
+  }
+}
+

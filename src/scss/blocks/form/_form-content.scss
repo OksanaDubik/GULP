@@ -1,0 +1,138 @@
+.form-content {
+  width: 52%;
+  padding-top: 10px;
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-top: 72px;
+  }
+
+
+  & h4 {
+    font-family: var(--font-main);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0;
+    letter-spacing: -0.746px;
+    margin-bottom: 30px;
+    @media (max-width: 448px) {
+      font-size: 20px;
+      margin-top: -15px;
+
+    }
+    @media (max-width: 375px) {
+      margin-top: -23px;
+    }
+  }
+
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: 949px) {
+      flex-direction: column;
+    }
+  }
+
+  & label {
+    padding: 0 0 8px 4px;
+    font-family: var(--font-main);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1px
+  }
+
+  &__inp {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 28px;
+    @media (max-width: 375px) {
+      margin-top: 26px;
+    }
+  }
+
+
+  & input {
+    margin-top: 8px;
+    font-family: var(--font-rare);
+    color: #000;
+    padding: 9px 13px;
+    border-radius: 8px;
+    background: #FFF;
+    border: 1px solid #D2D6DA;
+    transition: border 0.3s;
+  }
+
+  & textarea {
+    margin: 8px 0 42px;
+    color: #000;
+    padding: 9px 13px;
+    border-radius: 8px;
+    background: #FFF;
+    border: 1px solid #D2D6DA;
+    transition: border 0.3s;
+    height: 96px;
+    flex-shrink: 0;
+  }
+
+
+  & input:active,
+  & textarea:active {
+    border: 1px solid #292929;
+  }
+
+  & ::placeholder {
+    color: #3D3D3D;
+    font-family: var(--font-rare);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 7px; /* 50% */
+    opacity: 0.5;
+  }
+
+  &__button {
+    padding: 16px 12.5%;
+    margin-left: -0.5%;
+    margin-top: -5px;
+    @media (max-width: 448px) {
+      padding: 17.5px 82px;
+      margin-left: 15vw;
+    }
+  }
+
+}
+
+#message, #email {
+  width: 100%;
+}
+
+#message {
+  height: 96px;
+  margin-top: 16px;
+}
+
+#fname, #lname {
+  width: 19.3vw;
+  @media (max-width: 949px) {
+    width: 38.3vw;
+  }
+  @media (max-width: 767px) {
+    width: 80vw;
+
+  }
+  @media (max-width: 375px) {
+    width: 83vw;
+  }
+}
+.errInpFN, .errInpLN, .errInpEm{
+  display: none;
+  color: #fff;
+  font-size: 10px;
+}
+
+
+
