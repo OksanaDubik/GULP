@@ -42,7 +42,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "14.17.0",
     "javascript.nodejs.core.library.typings.version": "14.17.0",
-    "last_opened_file_path": "E:/Portfolio/TestGulp",
+    "last_opened_file_path": "E:/Portfolio/GULP",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,6 +81,7 @@
       <workItem from="1700828217579" duration="4597000" />
       <workItem from="1701341237915" duration="827000" />
       <workItem from="1701495313947" duration="3007000" />
+      <workItem from="1701518505295" duration="1370000" />
     </task>
     <servers />
   </component>
