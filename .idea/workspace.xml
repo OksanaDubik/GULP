@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2b013a3-89d7-4d4d-b466-4b3d156e8110" name="Changes" comment="img">
-      <change beforePath="$PROJECT_DIR$/build/blocks/footer/footer-aside.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/blocks/footer/footer-aside.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blocks/footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/blocks/footer/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/footer/footer-aside.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/footer/footer-aside.html" afterDir="false" />
-    </list>
+    <list default="true" id="e2b013a3-89d7-4d4d-b466-4b3d156e8110" name="Changes" comment="title, docs.js" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,24 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "14.17.0",
-    "javascript.nodejs.core.library.typings.version": "14.17.0",
-    "last_opened_file_path": "E:/Portfolio/GULP",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.17.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.17.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Portfolio/GULP&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Portfolio\TestGulp\gulp" />
@@ -88,6 +82,7 @@
       <workItem from="1701341237915" duration="827000" />
       <workItem from="1701495313947" duration="3007000" />
       <workItem from="1701518505295" duration="5963000" />
+      <workItem from="1703227467569" duration="542000" />
     </task>
     <task id="LOCAL-00001" summary="sending to git">
       <created>1701519983394</created>
@@ -180,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701524330445</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="title, docs.js">
+      <created>1703227643314</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1703227643314</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +193,7 @@
     <MESSAGE value="'babel' delete" />
     <MESSAGE value="img/css" />
     <MESSAGE value="img" />
-    <option name="LAST_COMMIT_MESSAGE" value="img" />
+    <MESSAGE value="title, docs.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="title, docs.js" />
   </component>
 </project>
